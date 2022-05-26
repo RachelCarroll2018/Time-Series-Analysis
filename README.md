@@ -35,6 +35,7 @@ The following subsections detail these steps.
 Does the Google search traffic for the company link to any financial events or is the search traffic data just random noise? 
 
 1. I sliced the data to just the month of May 2020. (During this month, MercadoLibre released its quarterly financial results) and used hvPlot to visualize the results. Did any unusual patterns exist? 
+
 ![pic 1](https://user-images.githubusercontent.com/98990090/170394146-e3366dbe-a54a-4e89-8d81-d3e6e5f2e509.png)
 #### There were no highly unusual patterns existing in the Month of May besides a slight increase on 5/5 which capped at 120 search trends.
 
@@ -49,14 +50,17 @@ Marketing realizes that they can use the hourly search data, too. If they can tr
 To that end, you want to mine the search traffic data for predictable seasonal patterns of interest in the company. To do so, I completed the following steps:
 
 1. Group the hourly search data to plot the average traffic by the day of the week (for example, Monday vs. Friday)
+
 ![pic 2](https://user-images.githubusercontent.com/98990090/170394634-2fedb5ac-6139-46ef-98a9-7c6e05ad17cf.png)
 #### Search traffic peaks in the beginning of the week, at it's highest point on Tuesday and tapers off reaching it's lowest point on Sunday.
 
 2. Using hvPlot, visualize this traffic as a heatmap, referencing `index.hour` for the x-axis and `index.dayofweek` for the y-axis. Does any day-of-week effect concentrate in just a few hours of that day?
+
 ![heatmap](https://user-images.githubusercontent.com/98990090/170394875-d9811056-405b-4ff9-94a0-68b42bbb82b5.png)
 #### The least amount of searches are between 5 and 10 am everyday of the week, and the the most searches are concentrated early in the week extremely late at night and leads into the early morning towards 4 am. Lowest day of the week for searches is Saturday.
 
 3. Group the search data by the week of the year. Does the search traffic tend to increase during the winter holiday period (weeks 40 through 52)?
+
 ![week of year](https://user-images.githubusercontent.com/98990090/170395006-799fcf89-90b0-405a-a156-3eb25833d7f2.png)
 #### There is a lot of upward and downward trends throughout the entire year, but after week 42 there is a sharp uptick in searching for traffic trends and has a very sharp decline after week 51.
 
@@ -67,6 +71,7 @@ Next, we want to know if any relationship between the search data and the compan
 1. Market events emerged during 2020 that many companies found difficult. But after the initial shock to global financial markets, new customers and revenue increased for e-commerce platforms. So, I sliced the data to just the first half of 2020 (`2020-01` to `2020-06`), and then used hvPlot to plot the data. 
 
 Do both time series indicate a common trend that’s consistent with this narrative?
+
 ![pic 5](https://user-images.githubusercontent.com/98990090/170395285-187c9d6d-38a5-40a9-9a22-622e9b724e08.png)
 #### Yes, both plots show a severe dip in search trends and closing price beginning at the end of February resulting in a drop in closing price of $752 to it's lowest point in March to $429. During the month of April there was a sharp uptick in both search trends and closing price showing the predicted revenue increase.
 
