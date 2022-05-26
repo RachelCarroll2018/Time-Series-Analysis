@@ -77,6 +77,7 @@ Do both time series indicate a common trend that’s consistent with this narrat
    - “Hourly Stock Return”, which holds the percentage of change in the company stock price on an hourly basis
 
 3. Does a predictable relationship exist between the lagged search traffic and the stock volatility or between the lagged search traffic and the stock price returns?
+
 ![volatility](https://user-images.githubusercontent.com/98990090/170395785-7081a856-d27e-4a25-a622-b079b00eb194.png)
 #### A predictable relationship does not exist between the lagged search traffic and the stock volatility OR between the lagged search traffic and the stock price returns. The highest correlation is positive .06 which is very low.
 
